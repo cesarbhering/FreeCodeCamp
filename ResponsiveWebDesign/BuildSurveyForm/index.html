@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- CSS only -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <title>DOTA2 Brasil Forms</title>
+</head>
+<body>
+  <h1 id='title'>Formulário Comunidade Dota 2</h1>
+  <p id='description'>Nos ajude a conhecer melhor a comunidade de Dota2 brasileira.</p>
+  <form id='survey-form'>
+    <div class='mb-3 form-group'>
+      <label for='name' class="form-label" id="name-label">Nome </label>
+      <br>
+      <input type="text" name="name" id="name" placeholder="Escreva seu nome" class='form-control' required>
+    </div>
+    <div class='mb-3 form-group'>  
+      <label for="email" class="form-label" id="email-label">Email </label>
+      <br>
+      <input type="email" name="email" id="email" placeholder="Escreva seu email" class='form-control' required>
+    </div>
+    <div class='mb-3 form-group'>  
+      <label for="number" class="form-label" id="number-label" required>Idade </label>
+      <br>
+      <input type="number" name="number" id="number" min="12" max="80" placeholder="Escreva sua idade" class='form-control' required>
+    </div>
+    <div class='mb-3 form-group'>  
+      <label for="dropdown" class="form-label">Posição </label>
+      <select class="form-control" id="dropdown" multiple>
+        <option value="Hard Carry">Hard Carry</option>
+        <option value="Midlaner">Midlaner</option>
+        <option value="Offlaner">Offlaner</option>
+        <option value="Sup 4">Sup 4</option>
+        <option value="Sup 5">Sup 5</option>
+      </select>
+      <div class='mb-3 form-group'>
+        <label>Em qual canal você mais vê os jogos do DPC ?</label>
+        <br>
+        <input type="radio" name="broadcast" id="aedrons" value="aedrons" class="form-check-input" required>
+        <label for="aedrons">Aedrons</label>
+        <input type="radio" name="broadcast" id="seucreysson" value="seucreysson" class="form-check-input">
+        <label for="seucreysson">seucreysson</label>
+        <input type="radio" name="broadcast" id="oficialEN" value="oficialEN" class="form-check-input">
+        <label for="oficialEN">Oficial em Inglês</label>
+        <input type="radio" name="broadcast" id="oficialPT-BR" value="oficialPT-BR" class="form-check-input">
+        <label for="oficialPT">Oficial em Português</label>
+        <input type="radio" name="broadcast" id="others" value="others" class="form-check-input">
+        <label for="others">Outros</label>
+      </div>
+      <div class='mb-3 form-group'>
+        <label>Você acompanha o circuito profissional de quais outros jogos?</label>
+        <br>
+        <input type="checkbox" name="otherGames" id="CSGO" value="CSGO" class="form-check-input">
+        <label for="CSGO" class="form-check-label">CS:GO</label>
+        <input type="checkbox" name="otherGames" id="LOL" value="LOL" class="form-check-input">
+        <label for="LOL" class="form-check-label">LoL</label>
+        <input type="checkbox" name="otherGames" id="RB6" value="RB6" class="form-check-input">
+        <label for="RB6" class="form-check-label">Rainbow 6</label>
+        <input type="checkbox" name="otherGames" id="FF" value="FF" class="form-check-input">
+        <label for="FF" class="form-check-label">Free Fire</label>
+        <input type="checkbox" name="otherGames" id="VALORANT" value="VALORANT" class="form-check-input">
+        <label for="FF" class="form-check-label">Valorant</label>
+        <input type="checkbox" name="otherGames" id="otherGamesWatched" value="otherGamesWatched" class="form-check-input">
+        <label for="otherGames" class="form-check-label">Outros Jogos</label>
+      </div>
+      <div class='mb-3 form-group'>
+        <h7>Qual tipo de informação/ferramenta você gostaria de ter a sua disposição para acompanhar melhor os jogos do DPC ?</h7>
+        <br>
+       <textarea name="addComments" id="addComments" placeholder="Escreva aqui as suas sugestões" class="form-control"></textarea> 
+      </div>
+      <div class='mb-3 form-group'>
+      <input type="submit" value="Enviar" id="submit" class="btn btn-success">
+      </div>
+    </div>
+  </form>
+</body>
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</html>
