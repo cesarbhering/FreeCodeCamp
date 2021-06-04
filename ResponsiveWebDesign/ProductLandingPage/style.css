@@ -1,0 +1,48 @@
+body {
+  padding-top: 2%;
+  text-align: center;
+  font-family: monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+#header-img {
+  max-width: 800px;
+  margin-top: 20px;
+}
+
+nav {
+  background-color: white;
+  padding-top: 10px;
+  top: 0;
+  position: fixed;
+  width: 100%;
+}
+
+.nav-link {
+  color: black;
+  font-size: large;
+  margin: 50px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-link :visited {
+  text-decoration: none;
+}
+
+#video {
+  margin-top: 5%;
+}
+
+form {
+  margin: 2%;
+}
+
+@media (max-width:767px) {
+  #header-img, #video, nav {
+      max-width: 100%;
+      max-height: 100%;
+  }
+}
